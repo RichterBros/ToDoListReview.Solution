@@ -7,9 +7,9 @@
   <p>There are no items in the list.</p>
 }
 <ul>
-  @foreach (Item index in Model)
+  @foreach (Item item in Model)
   {
-    <li>@index.Description</li>
+    <li><a href='/items/@item.Id'>@item.Description</a></li>
   }
 </ul>
 
